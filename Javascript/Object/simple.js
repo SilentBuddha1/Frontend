@@ -17,3 +17,8 @@ const user1 = {
 };
 
 console.log(user1);
+
+
+for(key in user){
+    console.log(`Key is: ${key} and value is: ${user[key]}`);
+}
