@@ -16,3 +16,5 @@ const curriedSum = c(sum);
 console.log(curriedSum(1)(2)(3)); 
 console.log(curriedSum(1, 2)(3)); 
 console.log(curriedSum(1, 2, 3));
+
+console.log(sum(1, 2, 3));  //sum(1,2) = NAN
