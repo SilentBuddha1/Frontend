@@ -6,3 +6,14 @@ const user = {
 }
 
 console.log(user);
+
+// Accessing properties
+
+const property = "name";
+const value = "Ramchandra";
+
+const user1 = {
+    [property] : value,
+};
+
+console.log(user1);
