@@ -14,6 +14,8 @@ function multiplyByTwo(obj){
     for(let key in obj){
         if(typeof obj[key] === "number"){
             obj[key] = obj[key] * 2;
+        }else if(typeof obj[key] === "string" && !isNaN(obj[key])){
+            obj[key] = parseInt(obj[key]) * 2;
         }
     }
 }
