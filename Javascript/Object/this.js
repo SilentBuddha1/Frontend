@@ -6,5 +6,5 @@ const shape = {
 };
 
 console.log(shape.diameter()); // Normal function this refers to the shape object 
-console.log(shape.perimeter()); // Arrow function this refers to the global object
+console.log(shape.perimeter()); // Arrow function this refers to the global or window object
 
