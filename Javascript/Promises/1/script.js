@@ -31,24 +31,34 @@
 
 //Promises
 
-console.log("Start");
+// console.log("Start");
 
-const sub = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        const result = true;
-        if(result){
-            resolve("Done");
-        }
-            else reject(new error("Cancelled"));
-    }, 2000);
+// const sub = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         const result = true;
+//         if(result){
+//             resolve("Done");
+//         }
+//             else reject(new error("Cancelled"));
+//     }, 2000);
 
-});
+// });
 
-sub.then((res) =>{
+// sub.then((res) =>{
+//     console.log(res);
+
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+// console.log(sub);
+
+// console.log("Stop");
+
+const Pro= Promise.resolve("Continue...");
+
+console.log(Pro);
+
+Pro.then((res) => {
     console.log(res);
-
-}).catch((err)=>{
-    console.log(err);
 })
-
-console.log("Stop");
