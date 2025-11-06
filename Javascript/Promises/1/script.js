@@ -13,3 +13,17 @@ setTimeout(() => {
 }, 1000);
 
 console.log("This message is displayed immediately.");
+
+
+//Callback
+
+function callBack(name, cb) {
+    setTimeout(() => {
+        cb(`Name= ${name}`);
+    }, 1000);
+    console.log("Running...");
+}
+
+const message = callBack("Ramchandra", function (msg){
+    console.log(`${msg}\nDone...`);
+})
