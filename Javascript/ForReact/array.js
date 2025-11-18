@@ -91,13 +91,21 @@
 
 // Simple word used in array to return new array
 
-let arr = [1,2,3,4,5];
+// let arr = [1,2,3,4,5];
 
-let newArr = arr.map((e) => e * e);
+// let newArr = arr.map((e) => e * e);
 
-console.log(arr);
-console.log(newArr);
+// console.log(arr);
+// console.log(newArr);
 
 
-let Arr = arr.map(e => e > 3 ? e + 5 : e);
-console.log(Arr);
+// let Arr = arr.map(e => e > 3 ? e + 5 : e);
+// console.log(Arr);
+
+// Filter
+
+let arr = [1,2,3,4,5,6];
+
+const ans = arr.filter((e) => e < 4);
+
+console.log(ans);
