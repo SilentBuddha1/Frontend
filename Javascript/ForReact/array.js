@@ -60,21 +60,25 @@
 
 // Arrow function 
 
-const add = (a, b) => {
-    console.log(`Sum = ${a+b}`);
-}
+// const add = (a, b) => {
+//     console.log(`Sum = ${a+b}`);
+// }
 
-const sub = (a, b) => {
-    return a - b;
-}
+// const sub = (a, b) => {
+//     return a - b;
+// }
 
-const mul = (a) => a * a ;
+// const mul = (a) => a * a ;
 
-const div = () => {
-    console.log("Divide");
-}
+// const div = () => {
+//     console.log("Divide");
+// }
 
-add(5,4);
-console.log(sub(5,4));
-console.log(mul(5));
-div();
+// add(5,4);
+// console.log(sub(5,4));
+// console.log(mul(5));
+// div();
+
+const name = () => ({first: "Ramchandra" , last: "Karki"});
+
+console.log(name());
