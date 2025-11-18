@@ -97,3 +97,7 @@ let newArr = arr.map((e) => e * e);
 
 console.log(arr);
 console.log(newArr);
+
+
+let Arr = arr.map(e => e > 3 ? e + 5 : e);
+console.log(Arr);
