@@ -79,6 +79,21 @@
 // console.log(mul(5));
 // div();
 
-const name = () => ({first: "Ramchandra" , last: "Karki"});
+// const name = () => ({first: "Ramchandra" , last: "Karki"});
 
-console.log(name());
+// console.log(name());
+
+
+// Map, Filter and Reduce
+
+
+// Map: creates a new array by applying a function to each element; returns the transformed array and does not mutate the original. Callback receives (element, index, array).
+
+// Simple word used in array to return new array
+
+let arr = [1,2,3,4,5];
+
+let newArr = arr.map((e) => e * e);
+
+console.log(arr);
+console.log(newArr);
