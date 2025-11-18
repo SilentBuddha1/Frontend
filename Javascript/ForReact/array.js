@@ -10,24 +10,50 @@
 
 
 
-let state = [1,2,3,4];
+// let state = [1,2,3,4];
 
-let copy = [...state]; //Destructuring by spread
+// let copy = [...state]; //Destructuring by spread
 
-copy.pop();
+// copy.pop();
 
-console.log(state);
-console.log(copy);
+// console.log(state);
+// console.log(copy);
 
-var obj = {
+// var obj = {
+//     name: "Ram",
+//     age: 24,
+// }
+
+// let copyObj = {...obj};
+
+// copyObj.name = "Hari";
+
+// console.log(obj);
+
+// console.log(copyObj);
+
+//  const {age} = obj;
+
+// console.log(`Age = ${age}`);
+
+let obj = {
     name: "Ram",
-    age: 24,
-}
+    grade: "4th year",
+    address: {
+        temp: "Pokhara",
+        permanent:"Dolakha",
+    }
+};
 
-let copyObj = {...obj};
+const {temp} = obj.address;
 
-copyObj.name = "Hari";
+console.log(temp);
 
-console.log(obj);
 
-console.log(copyObj);
+let arr = [12, function(){},13];
+
+var [first, second,third] = arr;
+
+console.log(first, second);
+
+console.log(third);
