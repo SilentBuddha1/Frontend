@@ -36,24 +36,45 @@
 
 // console.log(`Age = ${age}`);
 
-let obj = {
-    name: "Ram",
-    grade: "4th year",
-    address: {
-        temp: "Pokhara",
-        permanent:"Dolakha",
-    }
-};
+// let obj = {
+//     name: "Ram",
+//     grade: "4th year",
+//     address: {
+//         temp: "Pokhara",
+//         permanent:"Dolakha",
+//     }
+// };
 
-const {temp} = obj.address;
+// const {temp} = obj.address;
 
-console.log(temp);
+// console.log(temp);
 
 
-let arr = [12, function(){},13];
+// let arr = [12, function(){},13];
 
-var [first, second,third] = arr;
+// var [first, second,third] = arr;
 
-console.log(first, second);
+// console.log(first, second);
 
-console.log(third);
+// console.log(third);
+
+// Arrow function 
+
+const add = (a, b) => {
+    console.log(`Sum = ${a+b}`);
+}
+
+const sub = (a, b) => {
+    return a - b;
+}
+
+const mul = (a) => a * a ;
+
+const div = () => {
+    console.log("Divide");
+}
+
+add(5,4);
+console.log(sub(5,4));
+console.log(mul(5));
+div();
